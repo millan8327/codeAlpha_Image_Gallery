@@ -82,6 +82,11 @@ body {
   cursor: pointer;
 }
 
+.controls {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
 /*  Mobile Responsive */
 @media (max-width: 600px) {
 
@@ -106,5 +111,22 @@ body {
 
   .lightbox img {
     width: 95%;
+  }
+  .lightbox {
+  display: none;
+  flex-direction: column;   
+  justify-content: center;
+  align-items: center;
+}
+.lightbox img {
+  width: 80%;
+  max-width: 600px;
+  height: 400px;   /* 👈 fixed height দিলে jump বন্ধ */
+  object-fit: cover;
+  border-radius: 10px;
+}
+  button{
+    display: flex;
+
   }
 }
