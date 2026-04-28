@@ -2,64 +2,61 @@ body {
   margin: 0;
   font-family: Arial;
 }
+
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
   background: black;
   color: white;
   border-bottom: 3px solid blue;
 }
-.navbar li{
-  border-bottom: 1px solid blue;
-}
-#btnstyle{
-  height:50px;
-  width:80px;
-  background-color:white;
-  color:black;
-}
+
 .menu {
   display: flex;
   list-style: none;
   gap: 15px;
 }
+
 .menu li {
   cursor: pointer;
 }
-.container {
-  text-align: center;
-  margin-top: 20px;
+
+/* Button */
+#btnstyle {
+  height: 50px;
+  width: 80px;
+  background-color: white;
+  color: black;
 }
-.controls {
-  margin-top: 20px;
+
+/* Gallery (IMPORTANT FIX) */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-#prevBtn, #nextBtn {
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-}
+
 .gallery img {
-  width: 50%;
+  width: 100%;
+  max-width: 300px;
   height: 200px;
+  margin: 10px;
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s;
 }
-.gallery img {
-  width: 100%;
-  max-width: 300px;
-  height:200px;
-  margin:10px;
-}
+
 .gallery img:hover {
   transform: scale(1.05);
 }
 
+/* Lightbox */
 .lightbox {
-  display:none;
-  flex-direction:row;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -85,18 +82,16 @@ body {
   cursor: pointer;
 }
 
- /* Mobile (max-width: 600px)  */
+/*  Mobile Responsive */
 @media (max-width: 600px) {
+
   .navbar {
-    flex-direction:row;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
   }
 
   .menu {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    align-items: center;
   }
 
   #btnstyle {
@@ -105,7 +100,7 @@ body {
   }
 
   .gallery img {
-    width: 90%;
+    max-width: 90%;
     height: auto;
   }
 
@@ -113,4 +108,3 @@ body {
     width: 95%;
   }
 }
-
