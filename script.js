@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const img = document.createElement("img");
   img.src = imgData.src;
   img.addEventListener("click", () => {
-    currentIndex = index; // 🔥 important
+    currentIndex = index;
     lightbox.style.display = "flex";
     lightboxImg.src = imgData.src;
   });
