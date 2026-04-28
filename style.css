@@ -10,6 +10,9 @@ body {
   color: white;
   border-bottom: 3px solid blue;
 }
+.navbar li{
+  border-bottom: 1px solid blue;
+}
 #btnstyle{
   height:50px;
   width:80px;
@@ -85,7 +88,7 @@ body {
  /* Mobile (max-width: 600px)  */
 @media (max-width: 600px) {
   .navbar {
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
     text-align: center;
   }
