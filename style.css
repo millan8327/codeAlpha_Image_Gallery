@@ -8,6 +8,7 @@ body {
   padding: 10px 20px;
   background: black;
   color: white;
+  border-bottom: 3px solid blue;
 }
 #btnstyle{
   height:50px;
@@ -79,5 +80,34 @@ body {
   font-size: 30px;
   color: white;
   cursor: pointer;
+}
+
+ /* Mobile (max-width: 600px)  */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  #btnstyle {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .gallery img {
+    width: 90%;
+    height: auto;
+  }
+
+  .lightbox img {
+    width: 95%;
+  }
 }
 
